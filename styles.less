@@ -1,0 +1,348 @@
+@commonWidth: 100%;
+@headerFooterHeight: 160px;
+@colorDarkBlue: #336699;
+@colorTextInWhite: #1F3347;
+@colorGray: #E6E6E6;
+@colorBlack: black;
+@colorWhite: white;
+@colorHoverWhite: antiquewhite;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+html , body {
+  height : 100%;
+  background-color: @colorGray;
+}
+
+a {
+  text-decoration:none;
+}
+
+/* -------------------------------------------------------------- header -------------------------------------------------------------------*/
+
+header, footer {
+  width: @commonWidth;
+  min-height: @headerFooterHeight;
+  background-color: @colorDarkBlue;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header {
+  background-color: @colorDarkBlue;
+}
+
+.logo {
+  display: block;
+  font-size: 26pt;
+}
+
+.menu_1 {
+  list-style-type: none;
+
+  a {
+    color: @colorTextInWhite;
+  }
+
+  a:hover {
+    color: white;
+  }
+}
+
+.contacts {
+
+  a {
+    list-style-type: none;
+    color: @colorTextInWhite;
+  }
+
+  a:hover {
+    color: white;
+  }
+}
+/* -------------------------------------------------------------- main -------------------------------------------------------------------*/
+.main {
+  min-height: 500px;
+
+  .form {
+    background-color: yellow;
+  }
+
+  .menu_3 {
+    .typeBuildingOut {
+      padding-top: 10px;
+      padding-bottom: 5px;
+      border: @colorBlack solid 2px;
+      background-color: white;
+
+      list-style-type: none;
+      background-color: white;
+      font-size: 14pt;
+      color: @colorTextInWhite;
+    }
+
+     .typeBuildingOut:hover {
+       background-color: @colorHoverWhite;
+     }
+  }
+
+  .typeWorkOut {
+    padding: 10px;
+    list-style-type: none;
+
+    font-size: 14pt;
+    color: @colorTextInWhite;
+  }
+
+  .typeWorkIn {
+    background-color: white;
+    vertical-align: middle;
+    font-size: 12pt;
+
+    a {
+      color: @colorTextInWhite;
+    }
+  }
+
+  .typeWorkIn:hover {
+    background-color: @colorHoverWhite;
+  }
+
+  .squareImg {
+    display: table-cell;
+    width: 170px;
+    height: 173px;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .squareImg2 {
+    width: 150px;
+    text-align: center;
+  }
+
+  .squareText {
+    display: table-cell;
+  }
+}
+
+footer {
+  font-size: 16px;
+  color: @colorWhite;
+  text-align: right;
+
+  p {
+    margin: 20px;
+  }
+}
+
+/* -------------------------------------------------------------- shop -------------------------------------------------------------------*/
+.menu_shop {
+  list-style-type: none;
+  float: left;
+
+  li {
+    list-style-type: none;
+    position: relative;
+
+    a {
+      color: @colorBlack;
+      display: block;
+      padding: 5px 10px;
+      border-radius: 5px;
+      width: 200px;
+      max-height: 50px;
+      min-height: 25px;
+      background-color: white;
+      border: 2px solid @colorDarkBlue;
+      margin: 3px;
+    }
+  }
+
+  li:hover > a {
+    background-color: @colorHoverWhite;
+  }
+
+  ul {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 203px;
+  }
+
+  li:hover ul {
+    display: block;
+  }
+}
+
+.content_shop {
+  display: block;
+  float: left;
+  width: 2000px;
+  min-height: 500px;
+  padding: 20px;
+}
+
+.content_shop > img {
+  float: left;
+}
+
+.shopTypeItems {
+  display: block;
+  float: left;
+  width: 40%;
+  min-height: 100px;
+  background-color: white;
+  padding: 10px;
+  color: @colorBlack;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: @colorGray;
+}
+
+/* ---------------------------------------------------------- Extra large > 1200px -------------------------------------------------------------- */
+@media screen and ( min-width: 1200px ) {
+
+}
+
+/* ---------------------------------------------------------- Large > 992px -------------------------------------------------------------- */
+@media screen and ( min-width: 992px ) {
+  .menu_1 {
+    float: left;
+    display: inline-block;
+    height: 100%;
+
+    li {
+      display: inline-block;
+
+      text-align: center;
+      width: 120px;
+      font-weight: bold;
+    }
+
+    li > a {
+      display: table-cell;
+      width: 120px;
+    }
+
+    li {
+      a > div:first-child {
+        height: 100px;
+      }
+      a > div:last-child {
+        height: 60px;
+      }
+    }
+
+    li:first-child a div:first-child {
+      background: url("images/CalcPrice1.svg") no-repeat 50%;
+    }
+
+    li:first-child:hover a div:first-child {
+      background: url("images/CalcPrice2.svg") no-repeat 50%;
+    }
+
+    li:nth-child(3) a div:first-child {
+      background: url("images/Article1.svg") no-repeat 50%;
+    }
+
+    li:nth-child(3):hover a div:first-child {
+      background: url("images/Article2.svg") no-repeat 50%;
+    }
+
+    li:nth-child(5) a div:first-child {
+      background: url("images/Project1.svg") no-repeat 50%;
+    }
+
+    li:nth-child(5):hover a div:first-child {
+      background: url("images/Project2.svg") no-repeat 50%;
+    }
+
+    li:nth-child(7) a div:first-child {
+      background: url("images/OnlineCalc1.svg") no-repeat 50%;
+    }
+
+    li:nth-child(7):hover a div:first-child {
+      background: url("images/OnlineCalc2.svg") no-repeat 50%;
+    }
+
+    li:last-child a div:first-child {
+      background: url("images/Shop1.svg") no-repeat 50%;
+    }
+
+    li:last-child:hover a div:first-child {
+      background: url("images/Shop2.svg") no-repeat 50%;
+    }
+  }
+
+  .contacts {
+    max-width: 300px;
+    font-size: 14pt;
+
+    img {
+      float: left;
+      padding-right: 5px;
+    }
+
+    li div:last-child {
+      display: table-cell;
+    }
+  }
+
+  .contacts {
+    li {
+      min-height: 40px;
+    }
+  }
+
+  .dropdown-divider {display: none}
+}
+
+/* ---------------------------------------------------------- Large < 992px -------------------------------------------------------------- */
+@media screen and ( max-width: 992px ) {
+  .contacts img {
+    display: none;
+  }
+}
+
+/* ---------------------------------------------------------- Medium > 768px -------------------------------------------------------------- */
+@media screen and ( min-width: 768px ) {
+
+}
+
+/* ---------------------------------------------------------- Medium < 768px -------------------------------------------------------------- */
+@media screen and ( max-width: 768px ) {
+
+}
+
+/* ---------------------------------------------------------- Small > 576px -------------------------------------------------------------- */
+@media screen and ( min-width: 576px ) {
+  .typeBuildingIn {
+    min-height: 120px;
+  }
+
+  .typeWorkIn {
+    min-height: 180px;
+  }
+}
+/* ---------------------------------------------------------- Extra small < 576px -------------------------------------------------------------- */
+@media screen and ( max-width: 576px ) {
+  .menu_3 a img {
+    display: none;
+  }
+
+  .squareImg2 {
+    display: none;
+  }
+}
