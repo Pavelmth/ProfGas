@@ -1,6 +1,6 @@
 @commonWidth: 100%;
 @headerFooterHeight: 160px;
-@colorDarkBlue: #336699;
+@colorDarkBlue: #87cefa;
 @colorTextInWhite: #1F3347;
 @colorGray: #E6E6E6;
 @colorBlack: black;
@@ -212,12 +212,12 @@ footer {
 }
 
 /* ---------------------------------------------------------- Extra large > 1200px -------------------------------------------------------------- */
-@media screen and ( min-width: 1200px ) {
+@media ( min-width: 1200px ) {
 
 }
 
 /* ---------------------------------------------------------- Large > 992px -------------------------------------------------------------- */
-@media screen and ( min-width: 992px ) {
+@media ( min-width: 992px ) {
   .menu_1 {
     float: left;
     display: inline-block;
@@ -245,43 +245,43 @@ footer {
       }
     }
 
-    li:first-child a div:first-child {
+    li:nth-child(1) a div:first-child {
       background: url("images/CalcPrice1.svg") no-repeat 50%;
     }
 
-    li:first-child:hover a div:first-child {
+    li:nth-child(1):hover a div:first-child {
       background: url("images/CalcPrice2.svg") no-repeat 50%;
     }
 
-    li:nth-child(3) a div:first-child {
+    li:nth-child(2) a div:first-child {
       background: url("images/Article1.svg") no-repeat 50%;
     }
 
-    li:nth-child(3):hover a div:first-child {
+    li:nth-child(2):hover a div:first-child {
       background: url("images/Article2.svg") no-repeat 50%;
     }
 
-    li:nth-child(5) a div:first-child {
+    li:nth-child(3) a div:first-child {
       background: url("images/Project1.svg") no-repeat 50%;
     }
 
-    li:nth-child(5):hover a div:first-child {
+    li:nth-child(3):hover a div:first-child {
       background: url("images/Project2.svg") no-repeat 50%;
     }
 
-    li:nth-child(7) a div:first-child {
+    li:nth-child(4) a div:first-child {
       background: url("images/OnlineCalc1.svg") no-repeat 50%;
     }
 
-    li:nth-child(7):hover a div:first-child {
+    li:nth-child(4):hover a div:first-child {
       background: url("images/OnlineCalc2.svg") no-repeat 50%;
     }
 
-    li:last-child a div:first-child {
+    li:nth-child(5) a div:first-child {
       background: url("images/Shop1.svg") no-repeat 50%;
     }
 
-    li:last-child:hover a div:first-child {
+    li:nth-child(5):hover a div:first-child {
       background: url("images/Shop2.svg") no-repeat 50%;
     }
   }
@@ -310,24 +310,24 @@ footer {
 }
 
 /* ---------------------------------------------------------- Large < 992px -------------------------------------------------------------- */
-@media screen and ( max-width: 992px ) {
+@media ( max-width: 992px ) {
   .contacts img {
     display: none;
   }
 }
 
 /* ---------------------------------------------------------- Medium > 768px -------------------------------------------------------------- */
-@media screen and ( min-width: 768px ) {
+@media ( min-width: 768px ) {
 
 }
 
 /* ---------------------------------------------------------- Medium < 768px -------------------------------------------------------------- */
-@media screen and ( max-width: 768px ) {
+@media ( max-width: 768px ) {
 
 }
 
 /* ---------------------------------------------------------- Small > 576px -------------------------------------------------------------- */
-@media screen and ( min-width: 576px ) {
+@media ( min-width: 576px ) {
   .typeBuildingIn {
     min-height: 120px;
   }
@@ -337,7 +337,7 @@ footer {
   }
 }
 /* ---------------------------------------------------------- Extra small < 576px -------------------------------------------------------------- */
-@media screen and ( max-width: 576px ) {
+@media ( max-width: 576px ) {
   .menu_3 a img {
     display: none;
   }

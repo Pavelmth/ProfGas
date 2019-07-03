@@ -9,100 +9,197 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-----------------------bootstrap navbar---------------------------->
+<!--bootstrap navbar________________________________________________________________________-->
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark header">
-        <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-expand-lg navbar-dark header">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto menu_1">
-                <li class="nav-item">
-                    <a href="#">
-                        <div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<!--навигация________________________________________________________________________-->        
+        <ul class="navbar-nav mr-auto menu_1">
+            <li class="nav-item">
+                <a href="#">
+                    <div></div>
+                    <div>КАЛЬКУЛЯТОР <br> СТОИМОСТИ</div>
+                </a>
+                <div class="dropdown-divider"></div>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <div></div>
+                    <div>СТАТЬИ</div>
+                </a>
+                <div class="dropdown-divider"></div>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <div></div>
+                    <div>ПРОЕКТЫ</div>
+                </a>
+                <div class="dropdown-divider"></div>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <div></div>
+                    <div>РАСЧЕТЫ <br> ONLINE</div>
+                </a>
+                <div class="dropdown-divider"></div>
+            </li>
+            <li class="nav-item">
+                <a href="shop.html">
+                    <div></div>
+                    <div>МАГАЗИН</div>
+                </a>
+                <div class="dropdown-divider"></div>
+            </li>
+            <li class="nav-item">
+                <a href="contacts.html">
+                    <div></div>
+                    <div>КОНТАКТЫ</div>
+                </a>
+                <div class="dropdown-divider"></div>
+            </li>
+            <li class="nav-item">
+                <!--кнопка Провести ГАЗ________________________________________________________________________-->
+    <div class="form">
+        <form action="#">
+           <button type="button" class="btn btn-lg bg-danger" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Провести ГАЗ</button>
+        </form>
 
-                        </div>
-                        <div>КАЛЬКУЛЯТОР <br> СТОИМОСТИ</div>
-                    </a>
-                </li>
-                <div class="dropdown-divider"></div>
-                <li class="nav-item"><a href="#"><div></div><div>СТАТЬИ</div></a></li>
-                <div class="dropdown-divider"></div>
-                <li class="nav-item"><a href="#"><div></div><div>ПРОЕКТЫ</div></a></li>
-                <div class="dropdown-divider"></div>
-                <li class="nav-item"><a href="#"><div></div><div>РАСЧЕТЫ <br> ONLINE</div></a></li>
-                <div class="dropdown-divider"></div>
-                <li class="nav-item"><a href="shop.html"><div></div><div>МАГАЗИН</div></a></li>
-            </ul>
-            <ul class="navbar-nav flex-column contacts">
-                <div class="dropdown-divider"></div>
-                <a href="tel:+78123333333"><li><div><img src="images/Phone.png" alt="Phone"></div><div> +7 (812) 333-33-33</div></li></a>
-                <div class="dropdown-divider"></div>
-                <a href="mailto:pochta@pochta.ru?subject=Вопрос по HTML"><li><div><img src="images/E_mail.png" alt="E-mail"></div><email> pochta@pochta.ru</email></li></a>
-                <div class="dropdown-divider"></div>
-                <a href="contacts.html"><li><div><img src="images/Location.png" alt="Location"></div><div class="contacts_text"> Санкт-Петербург, ул. Гороховая, д. 33, оф. 15. CХЕМА ПРОЕЗДА:</div></li></a>
-            </ul>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Заполните форму обратной связи и мы вам с вами свяжемся.</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label"> Ваш номер телефона </label>
+                                <input type="text" class="form-control" id="recipient-name" required="required" pattern="\+7[0-9]{3}-[0-9]{7}" placeholder="телефон">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label"> Ваше имя. Описание вида работы, адрес. </label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                        <button type="button" class="btn btn-primary">Послать сообщение</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
+    </div>
+                <div class="dropdown-divider"></div>
+            </li>
+        </ul>
+<!--навигация контактов________________________________________________________________________-->
+        <ul class="navbar-nav flex-column contacts">
+            <li>
+                <a href="tel:+78123333333">
+<!--                    <div>
+                        <img src="images/Phone.png" alt="Phone">
+                    </div> -->
+                    <div> +7 (812) 333-33-33</div>
+                </a>
+                <div class="dropdown-divider"></div>
+            </li>
+            <li>
+                <a href="mailto:pochta@pochta.ru?subject=Вопрос_с_сайта">
+<!--                    <div>
+                        <img src="images/E_mail.png" alt="E-mail">
+                    </div> -->
+                    <div> pochta@pochta.ru</div>
+                </a>
+                <div class="dropdown-divider"></div>
+            </li>
+            <li>
+                <a href="contacts.html">
+<!--                    <div>
+                        <img src="images/Location.png" alt="Location">
+                    </div> -->
+                    <div class="contacts_text"> Санкт-Петербург, ул.<br>Гороховая, д. 33, оф. 15.</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
 </header>
 
-<div class="container-fluid">
-            <img src="images/wallBoilers/Wolf_CGG_1K.jpg" alt="WOLF_CGG_1K">
-            <h1>котел настенный Wolf (Германия)</h1>
+<div class="container">
+    <div class="main">
+        <a href="images/wallBoilers/Wolf_CGG_1K.jpg" target="_blank">
+            <img height="300" max-width="300" src="images/wallBoilers/Wolf_CGG_1K.jpg" alt="WOLF_CGG_1K">
+        </a>
+            <h2>котел настенный Wolf (Германия)</h2>
             модель Wolf CGG 1K
-            <h2>Характеристики товара</h2>
+            <h3>Характеристики товара</h3>
             <p>
-            Цена:59 000 <br>
-            Производство	Германия <br>
-            Гарантия, мес	24 <br>
-            Мощность, кВт	28 <br>
-            Камера сгорания	закрытая <br>
-            Количество контуров	2 <br>
-            Отопление	да <br>
-            Горячее водоснабжение	да, проточный теплообменник <br>
-            Производительность ГВС, л/мин	12 <br>
-            Теплоноситель	вода, фирменный антифриз <br>
-            Высота, мм	855 <br>
-            Ширина, мм	440 <br>
-            Глубина, мм	393 <br>
-            Вес, кг	42 <br>
-            Диаметр дымохода, мм	60/100 <br>
-            Подключение газа, Ду мм	20 <br>
-            Расход газа м3/ч	3,30
-            <h3>Подробное описание товара</h3>
-            Газовые настенные котлы CGG-1K предназначены для отопления и ГВС в проточном режиме. Автоматическая регулировка напора вентилятора в зависимости от длины дымовой трубы. Вентилятор с плавной регулировкой числа оборотов. Подача воздуха и удаление дыма по концентрическим или раздельным воздуховодам и дымоходам. Котлы WOLF допущены для применения на территории Российской Федерации Разрешением Госгортехнадзора и имеют Сертификат соответствия.
-
-            Преимущества котлов Wolf CGG-1K:
-
-            надежная конструкция
-            высокий КПД
-            простота и удобство монтажа и сервиса при монтаже котла
-            не требуется оставлять свободное расстояние до боковой стены
-            быстрая и простая диагностика
-            эксплуатация котла на природном или сжиженном газе
-            простое управление
-            легкий доступ к блокам и деталям<
-            функция быстрого старта ГВС
-            подача воздуха для горения из атмосферы (закрытая камера)
-            подача воздуха из помещения(открытая камера)
-            функция мягкого старта
-            небольшой вес
-            Высококачественные компоненты котла:
-
-            насос Grundfos
-            гидравлический блок Grundfos
-            вентилятор Fime/EBM
-            комбинированный газовый клапан SIT
-            устройство регулирования SIT
-            горелка Worgas
-            пластинчатый теплообменник ГВС из нержавеющей стали
+                <ul>
+                    <li>Цена:59 000</li>
+                    <li>Производство    Германия</li>
+                    <li>Гарантия, мес   24</li>
+                    <li>Мощность, кВт   28</li>
+                    <li>Камера сгорания закрытая</li>
+                    <li>Количество контуров 2</li>
+                    <li>Отопление   да</li>
+                    <li>Горячее водоснабжение   да, проточный теплообменник</li>
+                    <li>Производительность ГВС, л/мин   12</li>
+                    <li>Теплоноситель   вода, фирменный антифриз</li>
+                    <li>Высота, мм  855</li>
+                    <li>Ширина, мм  440</li>
+                    <li>Глубина, мм 393</li>
+                    <li>Вес, кг 42</li>
+                    <li>Диаметр дымохода, мм    60/100</li>
+                    <li>Подключение газа, Ду мм 20</li>
+                    <li>Расход газа м3/ч    3,30</li>
+                </ul>
             </p>
-            <button id="buy" style="width: 200px; height: 50px; background-color: blue;"></button>
-        <div class="clearfix"></div>
+            <h3>Подробное описание товара</h3>
+            <p>
+               Газовые настенные котлы CGG-1K предназначены для отопления и ГВС в проточном режиме. Автоматическая регулировка напора вентилятора в зависимости от длины дымовой трубы. Вентилятор с плавной регулировкой числа оборотов. Подача воздуха и удаление дыма по концентрическим или раздельным воздуховодам и дымоходам. Котлы WOLF допущены для применения на территории Российской Федерации Разрешением Госгортехнадзора и имеют Сертификат соответствия. 
+            </p>
+            <h4>Преимущества котлов Wolf CGG-1K:</h4>
+            <ul>
+                <li>надежная конструкция</li>
+                <li>высокий КПД</li>
+                <li>простота и удобство монтажа и сервиса при монтаже котла</li>
+                <li>не требуется оставлять свободное расстояние до боковой стены</li>
+                <li>быстрая и простая диагностика</li>
+                <li>эксплуатация котла на природном или сжиженном газе</li>
+                <li>простое управление</li>
+                <li>легкий доступ к блокам и деталям</li>
+                <li>функция быстрого старта ГВС</li>
+                <li>подача воздуха для горения из атмосферы (закрытая камера)</li>
+                <li>подача воздуха из помещения(открытая камера)</li>
+                <li>функция мягкого старта</li>
+                <li>небольшой вес</li>
+                <li>
+                    <h5>Высококачественные компоненты котла:</h5>
+                    <ul>
+                        <li>насос Grundfos</li>
+                        <li>гидравлический блок Grundfos</li>
+                        <li>вентилятор Fime/EBM</li>
+                        <li>комбинированный газовый клапан SIT</li>
+                        <li>устройство регулирования SIT</li>
+                        <li>горелка Worgas</li>
+                        <li>пластинчатый теплообменник ГВС из нержавеющей стали</li>
+                    </ul>
+                </li>
+            </ul>
+            </p>
+        </div>
+    <div class="clearfix"></div>
 </div>
 <footer>
     <div class="clearfix"></div>
