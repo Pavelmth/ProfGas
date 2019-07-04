@@ -139,7 +139,21 @@
 </header>
 
 <div class="container">
-    <div class="main">
+    <div class="main" style="padding-top: 20px" >
+        <form action="index.html" method="POST">
+            <fieldset style="border: 2px solid black">
+                <legend>Обратная связь:</legend>
+                <label for="userName">Имя пользователя:</label><br>
+                <input name="userName" id="userName" type="text" placeholder="Иван"><br>
+                <label for="userLastName">Фамилия пользователя:</label><br>
+                <input name="userLastName" id="userLastName" type="text" placeholder="Иванов"><br>
+                <label for="userPass">Фамилия пользователя:</label><br>
+                <input name="userPass" id="userPass" type="password"><br>
+                <label for="agreement">огласны ли вы на обработку персоональных данных? </label>
+                <input id="agreement" type="checkbox" name="agree" value="agree"><br>
+                <button>Войти</button>
+            </fieldset>
+        </form>
         <div class="vcard">
             <div>
                 <span class="category">Строительство</span>
@@ -157,7 +171,12 @@
             </div>
         </div>
         <h3>Карта</h3>
-        <iframe width="700" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=30.348873138427738%2C59.803202998849926%2C30.398440361022953%2C59.812591239130754&amp;layer=mapnik&amp;marker=59.807897449481715%2C30.373656749725342" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=59.8079&amp;mlon=30.3737#map=16/59.8079/30.3737&amp;layers=N">Посмотреть более крупную карту</a></small>
+        <iframe width="700" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=30.348873138427738%2C59.803202998849926%2C30.398440361022953%2C59.812591239130754&amp;layer=mapnik&amp;marker=59.807897449481715%2C30.373656749725342" style="border: 1px solid black">
+        </iframe>
+        <br/>
+        <small>
+            <a href="https://www.openstreetmap.org/?mlat=59.8079&amp;mlon=30.3737#map=16/59.8079/30.3737&amp;layers=N">Посмотреть более крупную карту</a>
+        </small>
     </div>
 </div>
 <footer>
