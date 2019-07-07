@@ -11,142 +11,128 @@
 <body>
 <!--bootstrap navbar________________________________________________________________________-->
 <header>
-<nav class="navbar navbar-expand-lg navbar-dark header">
-    <a class="navbar-brand" href="index.html">
-        <img src="images/logo.png" alt="logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar navbar-expand-lg navbar-dark header">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-<!--навигация________________________________________________________________________-->    	
-        <ul class="navbar-nav mr-auto menu_1">
-            <li class="nav-item">
-                <a href="#">
-                    <div></div>
-                    <div>КАЛЬКУЛЯТОР <br> СТОИМОСТИ</div>
-                </a>
-                <div class="dropdown-divider"></div>
-            </li>
-            <li class="nav-item">
-            	<a href="#">
-            		<div></div>
-            		<div>СТАТЬИ</div>
-            	</a>
-            	<div class="dropdown-divider"></div>
-            </li>
-            <li class="nav-item">
-            	<a href="#">
-            		<div></div>
-            		<div>ПРОЕКТЫ</div>
-            	</a>
-            	<div class="dropdown-divider"></div>
-            </li>
-            <li class="nav-item">
-            	<a href="#">
-            		<div></div>
-            		<div>РАСЧЕТЫ <br> ONLINE</div>
-            	</a>
-            	<div class="dropdown-divider"></div>
-            </li>
-            <li class="nav-item">
-            	<a href="shop.html">
-            		<div></div>
-            		<div>МАГАЗИН</div>
-            	</a>
-            	<div class="dropdown-divider"></div>
-            </li>
-            <li class="nav-item">
-            	<a href="contacts.html">
-            		<div></div>
-            		<div>КОНТАКТЫ</div>
-            	</a>
-            	<div class="dropdown-divider"></div>
-            </li>
-            <li class="nav-item">
-            	<!--кнопка Провести ГАЗ________________________________________________________________________-->
-    <div class="form">
-        <form action="#">
-           <button type="button" class="btn btn-lg bg-danger" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Провести ГАЗ</button>
-        </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!--навигация________________________________________________________________________-->
+            <ul class="navbar-nav mr-auto menu_1">
+                <li class="nav-item">
+                    <a href="cost.html">
+                        <div></div>
+                        <div>КАЛЬКУЛЯТОР <br> СТОИМОСТИ</div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                </li>
+                <li class="nav-item">
+                    <a href="calculation.html">
+                        <div></div>
+                        <div>РАСЧЕТЫ <br> ONLINE</div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html">
+                        <div></div>
+                        <div>МАГАЗИН</div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                </li>
+                <li class="nav-item">
+                    <a href="contacts.html">
+                        <div></div>
+                        <div>КОНТАКТЫ</div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                </li>
+                <li class="nav-item">
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Заполните форму обратной связи и мы вам с вами свяжемся.</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="recipient-name" class="col-form-label"> Ваш номер телефона </label>
-                                <input type="text" class="form-control" id="recipient-name" required="required" pattern="\+7[0-9]{3}-[0-9]{7}" placeholder="телефон">
-                            </div>
-                            <div class="form-group">
-                                <label for="message-text" class="col-form-label"> Ваше имя. Описание вида работы, адрес. </label>
-                                <textarea class="form-control" id="message-text"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                        <button type="button" class="btn btn-primary">Послать сообщение</button>
+                </li>
+            </ul>
+        </div>
+        <!--кнопка Провести ГАЗ________________________________________________________________________-->
+        <div class="form gasForm">
+            <form action="#">
+                <button type="button" class="btnfos" text="btn btn-lg bg-danger" data-toggle="modal"
+                        data-target="#exampleModal" data-whatever="@getbootstrap">Провести ГАЗ
+                </button>
+            </form>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Заполните форму обратной связи и
+                                мы вам с вами свяжемся.</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label"> Ваш номер
+                                        телефона </label>
+                                    <input type="text" class="form-control" id="recipient-name"
+                                           required="required" pattern="\+7[0-9]{3}-[0-9]{7}"
+                                           placeholder="телефон">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label"> Ваше имя. Описание
+                                        вида работы, адрес. </label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть
+                            </button>
+                            <button type="button" class="btn btn-primary">Послать сообщение</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-            	<div class="dropdown-divider"></div>
-            </li>
-        </ul>
-<!--навигация контактов________________________________________________________________________-->
+        <div class="dropdown-divider"></div>
+        <!--навигация контактов________________________________________________________________________-->
         <ul class="navbar-nav flex-column contacts">
-        	<li>
-            	<a href="tel:+78123333333">
-<!--             		<div>
-            			<img src="images/Phone.png" alt="Phone">
-            		</div> -->
-            		<div> +7 (812) 333-33-33</div>
-            	</a>
-            	<div class="dropdown-divider"></div>
+            <li>
+                <a href="tel:+78123333333">
+                    <div> +7 (812) 333-33-33</div>
+                </a>
+                <div class="dropdown-divider"></div>
             </li>
             <li>
-            	<a href="mailto:pochta@pochta.ru?subject=Вопрос_с_сайта">
-<!--             		<div>
-            			<img src="images/E_mail.png" alt="E-mail">
-            		</div> -->
-            		<div> pochta@pochta.ru</div>
-            	</a>
-            	<div class="dropdown-divider"></div>
+                <a href="mailto:pochta@pochta.ru?subject=Вопрос_с_сайта">
+                    <div> pochta@pochta.ru</div>
+                </a>
+                <div class="dropdown-divider"></div>
             </li>
             <li>
-            	<a href="contacts.html">
-<!--             		<div>
-            			<img src="images/Location.png" alt="Location">
-            		</div> -->
-            		<div class="contacts_text"> Санкт-Петербург, ул.<br>Гороховая, д. 33, оф. 15.</div>
-            	</a>
+                <a href="contacts.html">
+                    <div class="contacts_text"> Санкт-Петербург, ул.<br>Гороховая, д. 33, оф. 15.</div>
+                </a>
             </li>
         </ul>
-    </div>
-</nav>
+    </nav>
 </header>
 
-<div class="container-fluid">
-    <div class="main">
-
-<!--Виды объектов________________________________________________________________________-->
+<div class="main">
+    <div class="container-fluid">
+        <!--Виды объектов________________________________________________________________________-->
         <div class="row menu_3">
             <a href="GasificationFlat.html" class="col-xl-3 col-lg-6 typeBuildingOut">
                 <div class="media">
                     <img class="align-self-center mr-3" src="images/flat.png" alt="flat">
                     <div class="media-body">
-                        <h5 class="mt-0">Газификация квартир</h5>
-                        <p class="mb-0">Проведем газ для промыщленных объектов</p>
+                        <h5 class="mt-0">Газификация частных домов и квартир</h5>
                     </div>
                 </div>
             </a>
@@ -154,8 +140,7 @@
                 <div class="media">
                     <img class="align-self-center mr-3" src="images/house.png" alt="house">
                     <div class="media-body">
-                        <h5 class="mt-0">Частные дома и многоквартирные дома</h5>
-                        <p class="mb-0">Проведем газ для промыщленных объектов</p>
+                        <h5 class="mt-0">Газификация поселков и садоводств</h5>
                     </div>
                 </div>
             </a>
@@ -163,8 +148,7 @@
                 <div class="media">
                     <img class="align-self-center mr-3" src="images/commerce.png" alt="commerce">
                     <div class="media-body">
-                        <h5 class="mt-0">Коммерческие помещения</h5>
-                        <p class="mb-0">Проведем газ для промыщленных объектов</p>
+                        <h5 class="mt-0">Газификация коммерческих помещений для юр. лиц</h5>
                     </div>
                 </div>
             </a>
@@ -172,18 +156,19 @@
                 <div class="media">
                     <img class="align-self-center mr-3" src="images/boilerHouse.png" alt="boilerHouse">
                     <div class="media-body">
-                        <h5 class="mt-0">Котельные и промышленные предприятия</h5>
-                         <p class="mb-0">Газификация для промыщленных объектов</p>
+                        <h5 class="mt-0">Газификация котельных и промышленных предприятий</h5>
                     </div>
                 </div>
             </a>
         </div>
-<!--Виды работ________________________________________________________________________-->
+    </div>
+    <div class="container">
+        <!--Виды работ________________________________________________________________________-->
         <div class="row">
-            <a href="typeWorkTU.html" class="col-xl-4 col-lg-6 col-sm-12 typeWorkOut">
+            <a href="typeWorkTU.html" class="col-lg-6 col-sm-12 typeWorkOut">
                 <div class="media typeWorkIn">
-                    <div class="align-self-center mr-3 squareImg2" >
-                        <img src="images/peterburgGaz.png" alt="drawingt">
+                    <div class="align-self-center mr-3 squareImg2">
+                        <img src="images/peterburgGaz.png" alt="drawing">
                     </div>
                     <div class="media-body">
                         <h5 class="mt-0">Получение технических условий</h5>
@@ -191,10 +176,10 @@
                     </div>
                 </div>
             </a>
-            <a href="typeWorkProject.html" class="col-xl-4 col-lg-6 col-sm-12 typeWorkOut">
+            <a href="typeWorkProject.html" class="col-lg-6 col-sm-12 typeWorkOut">
                 <div class="media typeWorkIn">
-                    <div class="align-self-center mr-3 squareImg2" >
-                        <img src="images/drawing.png" alt="drawingt">
+                    <div class="align-self-center mr-3 squareImg2">
+                        <img src="images/drawing.png" alt="drawing">
                     </div>
                     <div class="media-body">
                         <h5 class="mt-0">Проектирование</h5>
@@ -202,9 +187,9 @@
                     </div>
                 </div>
             </a>
-            <a href="typeWorkMounting.html" class="col-xl-4 col-lg-6 col-sm-12 typeWorkOut">
+            <a href="typeWorkMounting.html" class="col-lg-6 col-sm-12 typeWorkOut">
                 <div class="media typeWorkIn">
-                    <div class="align-self-center mr-3 squareImg2" >
+                    <div class="align-self-center mr-3 squareImg2">
                         <img src="images/welder.png" alt="checkList">
                     </div>
                     <div class="media-body">
@@ -213,9 +198,9 @@
                     </div>
                 </div>
             </a>
-            <a href="typeWorkChimney.html" class="col-xl-4 col-lg-6 col-sm-12 typeWorkOut">
+            <a href="typeWorkChimney.html" class="col-lg-6 col-sm-12 typeWorkOut">
                 <div class="media typeWorkIn">
-                    <div class="align-self-center mr-3 squareImg2" >
+                    <div class="align-self-center mr-3 squareImg2">
                         <img src="images/chimney.png" alt="checkList">
                     </div>
                     <div class="media-body">
@@ -224,58 +209,25 @@
                     </div>
                 </div>
             </a>
-            <a href="typeWorkGasConnect.html" class="col-xl-4 col-lg-6 col-sm-12 typeWorkOut">
+            <a href="typeWorkGasConnect.html" class="col-lg-6 col-sm-12 typeWorkOut">
                 <div class="media typeWorkIn">
-                    <div class="align-self-center mr-3 squareImg2" >
+                    <div class="align-self-center mr-3 squareImg2">
                         <img src="images/oven.png" alt="checkList">
                     </div>
                     <div class="media-body">
                         <h5 class="mt-0">Подключение газовых приборов</h5>
-                        <p class="mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p class="mt-0">Выполним подключение любых газовых приборов.</p>
                     </div>
                 </div>
             </a>
-            <a href="typeWorkCounting.html" class="col-xl-4 col-lg-6 col-sm-12 typeWorkOut">
+            <a href="typeWorkCounting.html" class="col-lg-6 col-sm-12 typeWorkOut">
                 <div class="media typeWorkIn">
-                    <div class="align-self-center mr-3 squareImg2" >
+                    <div class="align-self-center mr-3 squareImg2">
                         <img src="images/gazCounter.png" alt="checkList">
                     </div>
                     <div class="media-body">
                         <h5 class="mt-0">Установка узлов учета</h5>
                         <p class="mt-0">Учет ресурсов и экономия</p>
-                    </div>
-                </div>
-            </a>
-            <a href="typeWorkRepair.html" class="col-xl-4 col-lg-6 col-sm-12 typeWorkOut">
-                <div class="media typeWorkIn">
-                    <div class="align-self-center mr-3 squareImg2" >
-                        <img src="images/repair.png" alt="checkList">
-                    </div>
-                    <div class="media-body">
-                        <h5 class="mt-0">Ремонт</h5>
-                        <p class="mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </a>
-            <a href="typeWorkControl.html" class="col-xl-4 col-lg-6 col-sm-12 typeWorkOut">
-                <div class="media typeWorkIn">
-                    <div class="align-self-center mr-3 squareImg2" >
-                        <img src="images/checkList.png" alt="checkList">
-                    </div>
-                    <div class="media-body">
-                        <h5 class="mt-0">Контроль</h5>
-                        <p class="mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </a>
-            <a href="typeWorkGasVessel.html" class="col-xl-4 col-lg-6 col-sm-12 typeWorkOut">
-                <div class="media typeWorkIn">
-                    <div class="align-self-center mr-3 squareImg2" >
-                        <img src="images/checkList.png" alt="checkList">
-                    </div>
-                    <div class="media-body">
-                        <h5 class="mt-0">Газовые балоны</h5>
-                        <p class="mt-0">Производим установку и поставку газовых балонов</p>
                     </div>
                 </div>
             </a>
@@ -285,9 +237,42 @@
 </div>
 <footer>
     <div class="clearfix"></div>
-    <p>&copy;2019. Pavel Matuikhin. Все права защищены</p>
+    <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <h4>Навигация</h4>
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Калькулятор стоимости</a></li>
+                <li><a href="#">Расчеты</a></li>
+                <li><a href="#">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <h4>Виды газифицируемых объектов</h4>
+            <ul>
+                <li><a href="#">Газификация частных домов и квартир</a></li>
+                <li><a href="#">Газификация поселков и садоводств</a></li>
+                <li><a href="#">Газификация коммерческих помещений и юр. лиц</a></li>
+                <li><a href="#">Газификация котельных и промышленных предприятий</a></li>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <h4>Виды выполняемых рабор</h4>
+            <ul>
+                <li><a href="#">Получение технических условий</a></li>
+                <li><a href="#">Проектирование</a></li>
+                <li><a href="#">Монтажные работы</a></li>
+                <li><a href="#">Обследование вентканалов и дымоходов</a></li>
+                <li><a href="#">Подключение газовых приборов</a></li>
+                <li><a href="#">Установка узлов учета</a></li>
+            </ul>
+        </div>
+        <div ul class="col-xl-3 col-md-6">
+            <p>&copy;2019. Pavel Matiukhin. Все права защищены</p>
+        </div>
+    </div>
 </footer>
-
 <!-- jQuery -->
 <script src="scripts/jquery-3.3.1.min.js"></script>
 <script src="scripts/bootstrap.min.js"></script>

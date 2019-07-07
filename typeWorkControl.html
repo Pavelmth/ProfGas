@@ -17,43 +17,116 @@
         <a class="navbar-brand" href="index.html">
             <img src="images/logo.png" alt="logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!--навигация________________________________________________________________________-->
             <ul class="navbar-nav mr-auto menu_1">
                 <li class="nav-item">
-                    <a href="#">
-                        <div>
-
-                        </div>
+                    <a href="cost.html">
+                        <div></div>
                         <div>КАЛЬКУЛЯТОР <br> СТОИМОСТИ</div>
                     </a>
+                    <div class="dropdown-divider"></div>
                 </li>
-                <div class="dropdown-divider"></div>
-                <li class="nav-item"><a href="#"><div></div><div>СТАТЬИ</div></a></li>
-                <div class="dropdown-divider"></div>
-                <li class="nav-item"><a href="#"><div></div><div>ПРОЕКТЫ</div></a></li>
-                <div class="dropdown-divider"></div>
-                <li class="nav-item"><a href="#"><div></div><div>РАСЧЕТЫ <br> ONLINE</div></a></li>
-                <div class="dropdown-divider"></div>
-                <li class="nav-item"><a href="shop.html"><div></div><div>МАГАЗИН</div></a></li>
-            </ul>
-            <ul class="navbar-nav flex-column contacts">
-                <div class="dropdown-divider"></div>
-                <a href="tel:+78123333333"><li><div><img src="images/Phone.png" alt="Phone"></div><div> +7 (812) 333-33-33</div></li></a>
-                <div class="dropdown-divider"></div>
-                <a href="mailto:pochta@pochta.ru?subject=Вопрос по HTML"><li><div><img src="images/E_mail.png" alt="E-mail"></div><email> pochta@pochta.ru</email></li></a>
-                <div class="dropdown-divider"></div>
-                <a href="contacts.html"><li><div><img src="images/Location.png" alt="Location"></div><div class="contacts_text"> Санкт-Петербург, ул. Гороховая, д. 33, оф. 15. CХЕМА ПРОЕЗДА:</div></li></a>
+                <li class="nav-item">
+                    <a href="calculation.html">
+                        <div></div>
+                        <div>РАСЧЕТЫ <br> ONLINE</div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html">
+                        <div></div>
+                        <div>МАГАЗИН</div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                </li>
+                <li class="nav-item">
+                    <a href="contacts.html">
+                        <div></div>
+                        <div>КОНТАКТЫ</div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                </li>
+                <li class="nav-item">
+
+                </li>
             </ul>
         </div>
+        <!--кнопка Провести ГАЗ________________________________________________________________________-->
+        <div class="form gasForm">
+            <form action="#">
+                <button type="button" class="btnfos" text="btn btn-lg bg-danger" data-toggle="modal"
+                        data-target="#exampleModal" data-whatever="@getbootstrap">Провести ГАЗ
+                </button>
+            </form>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Заполните форму обратной связи и
+                                мы вам с вами свяжемся.</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label"> Ваш номер
+                                        телефона </label>
+                                    <input type="text" class="form-control" id="recipient-name"
+                                           required="required" pattern="\+7[0-9]{3}-[0-9]{7}"
+                                           placeholder="телефон">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label"> Ваше имя. Описание
+                                        вида работы, адрес. </label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть
+                            </button>
+                            <button type="button" class="btn btn-primary">Послать сообщение</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <!--навигация контактов________________________________________________________________________-->
+        <ul class="navbar-nav flex-column contacts">
+            <li>
+                <a href="tel:+78123333333">
+                    <div> +7 (812) 333-33-33</div>
+                </a>
+                <div class="dropdown-divider"></div>
+            </li>
+            <li>
+                <a href="mailto:pochta@pochta.ru?subject=Вопрос_с_сайта">
+                    <div> pochta@pochta.ru</div>
+                </a>
+                <div class="dropdown-divider"></div>
+            </li>
+            <li>
+                <a href="contacts.html">
+                    <div class="contacts_text"> Санкт-Петербург, ул.<br>Гороховая, д. 33, оф. 15.</div>
+                </a>
+            </li>
+        </ul>
     </nav>
 </header>
-
-<div class="container">
-    <div class="main">
+<div class="main">
+    <div class="container">
         <h5 class="">Получение технических условий</h5>
         <p class="">Проведем газ для промыщленных объектов</p>
         <!--from cantral gasification-->
@@ -83,9 +156,42 @@ Cтроительный контроль - это совокупность ме�
 </div>
 <footer>
     <div class="clearfix"></div>
-    <p>&copy;2017. Pavel Matuikhin. Все права защищены</p>
+    <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <h4>Навигация</h4>
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Калькулятор стоимости</a></li>
+                <li><a href="#">Расчеты</a></li>
+                <li><a href="#">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <h4>Виды газифицируемых объектов</h4>
+            <ul>
+                <li><a href="#">Газификация частных домов и квартир</a></li>
+                <li><a href="#">Газификация поселков и садоводств</a></li>
+                <li><a href="#">Газификация коммерческих помещений и юр. лиц</a></li>
+                <li><a href="#">Газификация котельных и промышленных предприятий</a></li>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <h4>Виды выполняемых рабор</h4>
+            <ul>
+                <li><a href="#">Получение технических условий</a></li>
+                <li><a href="#">Проектирование</a></li>
+                <li><a href="#">Монтажные работы</a></li>
+                <li><a href="#">Обследование вентканалов и дымоходов</a></li>
+                <li><a href="#">Подключение газовых приборов</a></li>
+                <li><a href="#">Установка узлов учета</a></li>
+            </ul>
+        </div>
+        <div ul class="col-xl-3 col-md-6">
+            <p>&copy;2019. Pavel Matiukhin. Все права защищены</p>
+        </div>
+    </div>
 </footer>
-
 <!-- jQuery -->
 <script src="scripts/jquery-3.3.1.min.js"></script>
 <script src="scripts/bootstrap.min.js"></script>
