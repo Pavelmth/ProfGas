@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>ПрофГаз</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 <!--bootstrap navbar________________________________________________________________________-->
@@ -22,18 +22,18 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!--навигация________________________________________________________________________-->
-            <ul class="navbar-nav mr-auto menu_1">
+            <ul class="navbar-nav mr-auto menu">
                 <li class="nav-item">
                     <a href="cost.html">
-                        <div></div>
-                        <div>КАЛЬКУЛЯТОР <br> СТОИМОСТИ</div>
+                        <div class="menuCalc"></div>
+                        <div>КАЛЬКУЛЯТОР СТОИМОСТИ</div>
                     </a>
                     <div class="dropdown-divider"></div>
                 </li>
                 <li class="nav-item">
                     <a href="calculation.html">
                         <div></div>
-                        <div>РАСЧЕТЫ <br> ONLINE</div>
+                        <div>РАСЧЕТЫ ONLINE</div>
                     </a>
                     <div class="dropdown-divider"></div>
                 </li>
@@ -59,7 +59,7 @@
         <!--кнопка Провести ГАЗ________________________________________________________________________-->
         <div class="form gasForm">
             <form action="#">
-                <button type="button" class="btnfos" text="btn btn-lg bg-danger" data-toggle="modal"
+                <button type="button" class="btnfos" data-toggle="modal"
                         data-target="#exampleModal" data-whatever="@getbootstrap">Провести ГАЗ
                 </button>
             </form>
@@ -115,18 +115,18 @@
                 </a>
                 <div class="dropdown-divider"></div>
             </li>
-            <li>
-                <a href="contacts.html">
-                    <div class="contacts_text"> Санкт-Петербург, ул.<br>Гороховая, д. 33, оф. 15.</div>
-                </a>
-            </li>
+            <!--            <li>-->
+            <!--                <a href="contacts.html">-->
+            <!--                    <div class="contacts_text"> Санкт-Петербург, ул.<br>Гороховая, д. 33, оф. 15.</div>-->
+            <!--                </a>-->
+            <!--            </li>-->
         </ul>
     </nav>
 </header>
 <div class="container">
     <div class="main">
-        <a href="images/wallBoilers/Wolf_CGG_1K.jpg" target="_blank">
-            <img height="300" max-width="300" src="images/wallBoilers/Wolf_CGG_1K.jpg" alt="WOLF_CGG_1K">
+        <a href="images/wallBoilers/wolf_CGG_1K.jpg" target="_blank">
+            <img height="300" max-width="300" src="images/wallBoilers/wolf_CGG_1K.jpg" alt="WOLF_CGG_1K">
         </a>
             <h2>котел настенный Wolf (Германия)</h2>
             модель Wolf CGG 1K
@@ -190,9 +190,42 @@
 </div>
 <footer>
     <div class="clearfix"></div>
-    <p>&copy;2017. Pavel Matuikhin. Все права защищены</p>
+    <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <h4>Навигация</h4>
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Калькулятор стоимости</a></li>
+                <li><a href="#">Расчеты</a></li>
+                <li><a href="#">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <h4>Виды газифицируемых объектов</h4>
+            <ul>
+                <li><a href="#">Газификация частных домов и квартир</a></li>
+                <li><a href="#">Газификация поселков и садоводств</a></li>
+                <li><a href="#">Газификация коммерческих помещений и юр. лиц</a></li>
+                <li><a href="#">Газификация котельных и промышленных предприятий</a></li>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <h4>Виды выполняемых рабор</h4>
+            <ul>
+                <li><a href="#">Получение технических условий</a></li>
+                <li><a href="#">Проектирование</a></li>
+                <li><a href="#">Монтажные работы</a></li>
+                <li><a href="#">Обследование вентканалов и дымоходов</a></li>
+                <li><a href="#">Подключение газовых приборов</a></li>
+                <li><a href="#">Установка узлов учета</a></li>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <p>&copy;2019. Pavel Matiukhin. Все права защищены</p>
+        </div>
+    </div>
 </footer>
-
 <!-- jQuery -->
 <script src="scripts/jquery-3.3.1.min.js"></script>
 <script src="scripts/bootstrap.min.js"></script>

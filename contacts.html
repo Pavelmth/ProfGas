@@ -22,18 +22,18 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!--навигация________________________________________________________________________-->
-            <ul class="navbar-nav mr-auto menu_1">
+            <ul class="navbar-nav mr-auto menu">
                 <li class="nav-item">
                     <a href="cost.html">
-                        <div></div>
-                        <div>КАЛЬКУЛЯТОР <br> СТОИМОСТИ</div>
+                        <div class="menuCalc"></div>
+                        <div>КАЛЬКУЛЯТОР СТОИМОСТИ</div>
                     </a>
                     <div class="dropdown-divider"></div>
                 </li>
                 <li class="nav-item">
                     <a href="calculation.html">
                         <div></div>
-                        <div>РАСЧЕТЫ <br> ONLINE</div>
+                        <div>РАСЧЕТЫ ONLINE</div>
                     </a>
                     <div class="dropdown-divider"></div>
                 </li>
@@ -59,7 +59,7 @@
         <!--кнопка Провести ГАЗ________________________________________________________________________-->
         <div class="form gasForm">
             <form action="#">
-                <button type="button" class="btnfos" text="btn btn-lg bg-danger" data-toggle="modal"
+                <button type="button" class="btnfos" data-toggle="modal"
                         data-target="#exampleModal" data-whatever="@getbootstrap">Провести ГАЗ
                 </button>
             </form>
@@ -115,24 +115,26 @@
                 </a>
                 <div class="dropdown-divider"></div>
             </li>
-            <li>
-                <a href="contacts.html">
-                    <div class="contacts_text"> Санкт-Петербург, ул.<br>Гороховая, д. 33, оф. 15.</div>
-                </a>
-            </li>
+            <!--            <li>-->
+            <!--                <a href="contacts.html">-->
+            <!--                    <div class="contacts_text"> Санкт-Петербург, ул.<br>Гороховая, д. 33, оф. 15.</div>-->
+            <!--                </a>-->
+            <!--            </li>-->
         </ul>
     </nav>
 </header>
 <div class="main">
     <div class="container">
-        <form action="index.html" method="POST">
-            <fieldset style="border: 2px solid black">
+        <form class="feedback_form" action="index.html" method="POST">
+            <fieldset>
                 <legend>Обратная связь:</legend>
                 <label for="userName">Имя пользователя:</label><br>
                 <input name="userName" id="userName" type="text" placeholder="Иван"><br>
                 <label for="userLastName">Фамилия пользователя:</label><br>
                 <input name="userLastName" id="userLastName" type="text" placeholder="Иванов"><br>
-                <label for="userPass">Фамилия пользователя:</label><br>
+                <label for="email">E-mail:</label><br>
+                <input name="email" id="email" type="email"><br>
+                <label for="userPass">Пароль:</label><br>
                 <input name="userPass" id="userPass" type="password"><br>
                 <label for="agreement">огласны ли вы на обработку персоональных данных? </label>
                 <input id="agreement" type="checkbox" name="agree" value="agree"><br>
