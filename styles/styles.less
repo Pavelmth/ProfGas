@@ -1,11 +1,10 @@
-@commonWidth: 100%;
 @headerFooterHeight: 160px;
-@colorDarkBlue: #cfe9fa;
+@headerFooter: #cfe9fa;
 @colorTextInWhite: #1F3347;
-@colorGray: #E6E6E6;
-@colorBlack: black;
-@colorWhite: white;
-@colorHoverWhite: antiquewhite;
+@bodyColor: white;
+@colorDark: black;
+@colorLight: white;
+@colorHoverLight: antiquewhite;
 @colorButton: #ff002f;
 
 * {
@@ -16,11 +15,11 @@
 
 html, body {
   height: 100%;
-  background-color: @colorGray;
+  background-color: @bodyColor;
 }
 
 a {
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 
 .clearfix::after {
@@ -32,18 +31,13 @@ a {
 /* -- header / footer -------------------------------------------------------------------*/
 
 header, footer {
-  width: @commonWidth;
+  width: 100%;
   min-height: @headerFooterHeight;
-  background-color: @colorDarkBlue;
-}
-
-.header {
-  background-color: @colorDarkBlue;
+  background-color: @headerFooter;
 }
 
 .logo {
   display: block;
-  font-size: 26pt;
 }
 
 .menu {
@@ -76,7 +70,7 @@ header, footer {
 }
 
 .gasForm {
-  margin: 20px;
+  margin: 20px 30px;
 }
 
 .btnfos {
@@ -84,7 +78,7 @@ header, footer {
   height: 50px;
   background-color: #ff002f;
   color: yellow;
-  padding: 10px;
+  padding-right: 10px;
 
   border: 0 solid;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
@@ -107,6 +101,7 @@ header, footer {
 
 /* -- main -------------------------------------------------------------------------------- */
 
+/*home task GeekBrains-------------------------------------------------------------------------*/
 .feedback_form {
   fieldset {
     border: 2px solid black;
@@ -139,9 +134,38 @@ table {
   margin-bottom: 10px;
 }
 
-.product {
+.products {
+  float: left;
+  padding: 0 10px;
+  width: 300px;
+}
+
+.product_img {
   height: 300px;
 }
+
+.product {
+  height: 300px;
+  float: left;
+}
+
+.buy_btn {
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  background-color: mediumturquoise;
+  border-radius: 10px;
+}
+
+.buy_btn:hover {
+  background-color: #0069d9;
+}
+
+.buy_btn:active {
+  background-color: red;
+}
+
+/*home task GeekBrains-------------------------------------------------------------------------*/
 
 .main {
   min-height: 500px;
@@ -151,10 +175,10 @@ table {
   }
 
   .menu_3 {
-    .typeBuildingOut {
+    .typeObject {
       padding-top: 10px;
       padding-bottom: 5px;
-      border: @colorBlack solid 2px;
+      border: @colorDark solid 2px;
       background-color: white;
 
       list-style-type: none;
@@ -162,20 +186,20 @@ table {
       color: @colorTextInWhite;
     }
 
-    .typeBuildingOut:hover {
-      background-color: @colorHoverWhite;
+    .typeObject:hover {
+      background-color: @colorHoverLight;
     }
   }
 
-  .typeWorkOut {
-    padding: 10px;
+  .typeActivityOut {
+    padding: 20px;
     list-style-type: none;
 
     font-size: 14pt;
     color: @colorTextInWhite;
   }
 
-  .typeWorkIn {
+  .typeActivityIn {
     background-color: white;
     vertical-align: middle;
     font-size: 12pt;
@@ -183,10 +207,14 @@ table {
     a {
       color: @colorTextInWhite;
     }
+
+    position: relative;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
   }
 
-  .typeWorkIn:hover {
-    background-color: @colorHoverWhite;
+  .typeActivityIn:hover {
+    background-color: @colorHoverLight;
   }
 
   .squareImg {
@@ -209,7 +237,7 @@ table {
 
 footer {
   font-size: 16px;
-  color: @colorBlack;
+  color: @colorDark;
   text-align: right;
 
   p {
@@ -218,79 +246,17 @@ footer {
 }
 
 /* -- shop -------------------------------------------------------------------*/
-.menu_shop {
-  list-style-type: none;
-  float: left;
-
-  li {
-    list-style-type: none;
-    position: relative;
-
-    a {
-      color: @colorBlack;
-      display: block;
-      padding: 5px 10px;
-      border-radius: 5px;
-      width: 200px;
-      max-height: 50px;
-      min-height: 25px;
-      background-color: white;
-      border: 2px solid @colorDarkBlue;
-      margin: 3px;
-    }
-  }
-
-  li:hover > a {
-    background-color: @colorHoverWhite;
-  }
-
-  ul {
-    display: none;
-    position: absolute;
-    top: 5px;
-    left: 203px;
-  }
-
-  li:hover ul {
-    display: block;
-  }
-}
-
-.content_shop {
-  display: block;
-  float: left;
-  width: 2000px;
-  min-height: 500px;
-  padding: 20px;
-}
-
-.content_shop > img {
-  float: left;
-}
-
-.shopTypeItems {
-  display: block;
-  float: left;
-  width: 40%;
-  min-height: 100px;
-  background-color: white;
-  padding: 10px;
-  color: @colorBlack;
-}
-
-#map {
-  width: 100%;
-  height: 400px;
-  background-color: @colorGray;
-}
 
 /* -- Extra large > 1200px -------------------------------------------------------------- */
 @media ( min-width: 1200px ) {
-
+  /* -- header / footer -------------------------------------------------------------------*/
+  /* -- main ----------------------------------------------------------------------------- */
+  /* -- shop ------------------------------------------------------------------------------*/
 }
 
 /* -- Large > 992px -------------------------------------------------------------- */
 @media ( min-width: 992px ) {
+  /* -- header / footer -------------------------------------------------------------------*/
   .menu {
     float: left;
     display: inline-block;
@@ -383,46 +349,58 @@ footer {
   .dropdown-divider {
     display: none
   }
+
+  /* -- main ----------------------------------------------------------------------------- */
+  /* -- shop ------------------------------------------------------------------------------*/
 }
 
-/* -- Large < 992px -------------------------------------------------------------- */
+/* -- Large < 992px ------------------------------------------------------------------------------- */
 @media ( max-width: 992px ) {
+  /* -- header / footer -------------------------------------------------------------------*/
   .contacts img {
     display: none;
   }
+  /* -- main ----------------------------------------------------------------------------- */
+  /* -- shop ------------------------------------------------------------------------------*/
 }
 
-/* -- Medium > 768px -------------------------------------------------------------- */
+/* -- Medium > 768px ------------------------------------------------------------------------------ */
 @media ( min-width: 768px ) {
+  /* -- header / footer -------------------------------------------------------------------*/
+  /* -- main ----------------------------------------------------------------------------- */
+  /* -- shop ------------------------------------------------------------------------------*/
 
 }
 
-/* -- Medium < 768px -------------------------------------------------------------- */
+/* -- Medium < 768px ------------------------------------------------------------------------------ */
 @media ( max-width: 768px ) {
-
+  /* -- header / footer -------------------------------------------------------------------*/
+  /* -- main ----------------------------------------------------------------------------- */
+  /* -- shop ------------------------------------------------------------------------------*/
 }
 
-/* -- Small > 576px -------------------------------------------------------------- */
+/* -- Small > 576px ------------------------------------------------------------------------------- */
 @media ( min-width: 576px ) {
+  /* -- header / footer -------------------------------------------------------------------*/
+  /* -- main ----------------------------------------------------------------------------- */
   .typeBuildingIn {
     min-height: 120px;
   }
 
-  .typeWorkIn {
+  .typeActivityIn {
     min-height: 180px;
   }
+
+  iframe {
+    width: 700px;
+    height: 500px;
+  }
+  /* -- shop ------------------------------------------------------------------------------*/
 }
 
-/* -- Extra small < 576px -------------------------------------------------------------- */
+/* -- Extra small < 576px ------------------------------------------------------------------------- */
 @media ( max-width: 576px ) {
-  .menu_3 a img {
-    display: none;
-  }
-
-  .squareImg2 {
-    display: none;
-  }
-
+  /* -- header / footer -------------------------------------------------------------------*/
   .gasForm {
     width: 100%;
   }
@@ -435,4 +413,13 @@ footer {
     width: 100%;
     text-align: center;
   }
+  /* -- main ----------------------------------------------------------------------------- */
+  .menu_3 a img {
+    display: none;
+  }
+
+  .squareImg2 {
+    display: none;
+  }
+  /* -- shop ------------------------------------------------------------------------------*/
 }
