@@ -1,7 +1,6 @@
 @headerFooterHeight: 160px;
 @headerFooter: #cfe9fa;
 @colorTextInWhite: #1F3347;
-@bodyColor: white;
 @colorDark: black;
 @colorLight: white;
 @colorHoverLight: antiquewhite;
@@ -11,15 +10,6 @@
   margin: 0;
   padding: 0;
   font-family: Roboto, Arial, Helvetica, sans-serif;
-}
-
-html, body {
-  height: 100%;
-  background-color: @bodyColor;
-}
-
-a {
-  /*text-decoration: none;*/
 }
 
 .clearfix::after {
@@ -34,6 +24,11 @@ header, footer {
   width: 100%;
   min-height: @headerFooterHeight;
   background-color: @headerFooter;
+}
+
+//исключение margin-right & left -15px из bottstrap.min.css:6
+footer .row {
+  margin: 0px;
 }
 
 .logo {
@@ -165,20 +160,16 @@ table {
   background-color: red;
 }
 
-/*home task GeekBrains-------------------------------------------------------------------------*/
+/*home task GeekBrains -------------------------------------------------------------------------*/
 
 .main {
-  min-height: 500px;
-
-  .form {
-    background-color: yellow;
-  }
-
   .menu_3 {
     .typeObject {
       padding-top: 10px;
       padding-bottom: 5px;
-      border: @colorDark solid 2px;
+      border-width: 2px;
+      border-color: @colorDark;
+      border-style: solid;
       background-color: white;
 
       list-style-type: none;
@@ -251,6 +242,22 @@ footer {
 @media ( min-width: 1200px ) {
   /* -- header / footer -------------------------------------------------------------------*/
   /* -- main ----------------------------------------------------------------------------- */
+  .main {
+    .menu_3 {
+      .typeObject:nth-child(1) {
+        border-right-width: 1px;
+      }
+
+      .typeObject:nth-child(2), .typeObject:nth-child(3) {
+        border-width: 2px 1px;
+      }
+
+      .typeObject:nth-child(4) {
+        border-left-width: 1px;
+      }
+    }
+  }
+
   /* -- shop ------------------------------------------------------------------------------*/
 }
 
@@ -354,6 +361,38 @@ footer {
   /* -- shop ------------------------------------------------------------------------------*/
 }
 
+/* -- Large > 992px and < 1199px -------------------------------------------------------------- */
+@media ( min-width: 992px ) and (max-width: 1199px) {
+  /* -- header / footer -------------------------------------------------------------------*/
+  /* -- main ----------------------------------------------------------------------------- */
+  .main {
+    .menu_3 {
+
+      .typeObject:nth-child(1) {
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+      }
+
+      .typeObject:nth-child(2) {
+        border-left-width: 1px;
+        border-bottom-width: 1px;
+      }
+
+      .typeObject:nth-child(3) {
+        border-top-width: 1px;
+        border-right-width: 1px;
+      }
+
+      .typeObject:nth-child(4) {
+        border-top-width: 1px;
+        border-left-width: 1px;
+      }
+    }
+  }
+
+  /* -- shop ------------------------------------------------------------------------------*/
+}
+
 /* -- Large < 992px ------------------------------------------------------------------------------- */
 @media ( max-width: 992px ) {
   /* -- header / footer -------------------------------------------------------------------*/
@@ -361,6 +400,22 @@ footer {
     display: none;
   }
   /* -- main ----------------------------------------------------------------------------- */
+  .main {
+    .menu_3 {
+      .typeObject:nth-child(1) {
+        border-bottom-width: 1px;
+      }
+
+      .typeObject:nth-child(2), .typeObject:nth-child(3) {
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+      }
+
+      .typeObject:nth-child(4) {
+        border-top-width: 1px;
+      }
+    }
+  }
   /* -- shop ------------------------------------------------------------------------------*/
 }
 
