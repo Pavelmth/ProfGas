@@ -1,4 +1,3 @@
-@headerFooterHeight: 160px;
 @headerFooter: #cfe9fa;
 @colorTextInWhite: #1F3347;
 @colorDark: black;
@@ -18,11 +17,16 @@
   clear: both;
 }
 
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: minmax(160px, auto) 1fr minmax(160px, auto);
+}
+
 /* -- header / footer -------------------------------------------------------------------*/
 
 header, footer {
   width: 100%;
-  min-height: @headerFooterHeight;
   background-color: @headerFooter;
 }
 
