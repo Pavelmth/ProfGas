@@ -30,10 +30,33 @@ header, footer {
   background-color: @headerFooter;
 }
 
-//исключение margin-right & left -15px из bottstrap.min.css:6
-footer .row {
-  margin: 0px;
+footer {
+  padding-top: 5px;
+  font-size: 16px;
+  color: @colorDark;
+  text-align: right;
+
+  p {
+    margin: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  //исключение margin-right & left -15px из bottstrap.min.css:6
+  .row {
+    margin: 0px;
+  }
 }
+
+
+
+
 
 .logo {
   display: block;
@@ -227,16 +250,6 @@ table {
 
   .squareText {
     display: table-cell;
-  }
-}
-
-footer {
-  font-size: 16px;
-  color: @colorDark;
-  text-align: right;
-
-  p {
-    margin: 20px;
   }
 }
 
