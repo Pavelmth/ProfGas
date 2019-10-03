@@ -17,6 +17,7 @@
   clear: both;
 }
 
+/* press footer to bottom */ 
 body {
   min-height: 100vh;
   display: grid;
@@ -33,7 +34,7 @@ header, footer {
 footer {
   padding-top: 5px;
   font-size: 16px;
-  color: @colorDark;
+  color: @colorTextInWhite;
   text-align: right;
 
   p {
@@ -44,19 +45,20 @@ footer {
     list-style-type: none;
   }
 
-  a:link {
-    text-decoration: none;
+  a {
+  	color: @colorTextInWhite;
   }
 
-  //исключение margin-right & left -15px из bottstrap.min.css:6
+  a:hover {
+  	color: @colorTextInWhite;
+  	text-shadow: 2px 2px 3px @colorLight;
+  }
+
+  /*исключение margin-right & left -15px из bottstrap.min.css:6*/
   .row {
     margin: 0px;
   }
 }
-
-
-
-
 
 .logo {
   display: block;
@@ -87,7 +89,8 @@ footer {
   }
 
   a:hover {
-    color: white;
+    color: @colorTextInWhite;
+  	text-shadow: 2px 2px 3px @colorLight;
   }
 }
 
